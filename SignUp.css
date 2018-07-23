@@ -1,0 +1,118 @@
+body, html{
+    height: 100%;
+}
+#parallax{
+    /* The image used */
+    background-image: url('pic_main2.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+   	font-size: 22px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 2.5s, fadeout 3.5s 3.5s;
+    animation: fadein 0.2s, fadeout 0.3s 0.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom:0; opacity:0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+/* for Sign up */
+form {
+    border: 3px solid #f1f1f1;
+	padding:50px;
+	margin:50px;
+}
+input[type=text],input[type=password]
+{
+	border: 1px solid #ccc;
+	padding:12px 20px;
+	box-sizing:border-box;
+	width:100%;
+	margin: 8px 0;
+	display: inline-block;
+}
+button {
+    background-color:#4CAF50;
+    color: white;    
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+	background-color: #f44336;
+ }
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {float:center;width:20%;}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1{
+	color:white;
+}
+.already
+{
+	text-align:left;
+	width:60%;
+}
