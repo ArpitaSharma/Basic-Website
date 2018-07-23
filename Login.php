@@ -29,4 +29,3 @@ if(isset($_POST['loginbtn']))
 			echo "<script>alert('invalid')</script>";
       }
    }
-?>
