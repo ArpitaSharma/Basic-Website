@@ -1,4 +1,4 @@
-<?ph
+<?php     p
 session_start();
 $connect = mysqli_connect("localhost","root","","myproject");
 if(!($connect))
